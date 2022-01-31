@@ -12,15 +12,6 @@ import { Container, WeatherIcon, WeatherInfoContainer, WeatherConditon, Conditio
     "pressure": "./icons/pressure.svg",
   };
 
-// export const WeatherContainer = styled.div`
-//   display: flex;
-//   width: 100%;
-//   margin: 30px auto;
-//   flex-direction: row;
-//   justify-content: space-between;
-//   align-items: center;
-// `;
-
 
 interface WeatherDetails{
     data : weatherType
