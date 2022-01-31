@@ -2,6 +2,7 @@ import React from 'react';
 import Weather from './components/WeatherComponent/Weather';
 import Logo from './components/WeatherComponent/icons/perfectday.svg';
 import styled from 'styled-components';
+import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
 
 const Heading = styled.h1`
   font-size: 28px;
@@ -11,6 +12,8 @@ const Heading = styled.h1`
 function App() {
   return (
     <div className="App">
+     
+     <Router>
      <nav className="navbar">
         <div className="navbar-brand">
             <a className="navbar-item" href="https://github.com/soorajks21/WeatherApp">
@@ -19,7 +22,12 @@ function App() {
             </a>
         </div>
       </nav>
-      <Weather />
+     
+        <Routes>
+          <Route path="/" element={<Weather/>} />
+          </Routes>
+      </Router>
+
   
        
     </div>
