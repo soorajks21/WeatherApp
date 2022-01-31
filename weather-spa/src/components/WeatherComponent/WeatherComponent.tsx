@@ -1,5 +1,4 @@
 import React, { FC } from 'react';
-import styled from "styled-components"
 import { weatherType } from '../../store/types';
 import WeatherInfoComponent from './WeatherInfoComponent';
 import { Container, WeatherIcon, WeatherInfoContainer, WeatherConditon, Condition, WeatherInfoLabel } from './WeatherStyledComponent';
