@@ -8,7 +8,6 @@ const initialState: WeatherState = {
 }
 
 export default (state = initialState, action: WeatherAction): WeatherState => {
-  console.log(action);
   switch(action.type) {
     case FETCH_WEATHER:
       return {
