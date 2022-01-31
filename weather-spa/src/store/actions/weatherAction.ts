@@ -5,7 +5,7 @@ import { WeatherAction, WeatherData, WeatherError, FETCH_WEATHER, SET_LOADING, S
 export const getWeather = (): ThunkAction<void, RootState, null, WeatherAction> => {
   return async dispatch => {
     try {
-      const res = await fetch(`http://localhost:3000/`);
+      const res = await fetch(`http://localhost:3001/`);
       if(!res.ok) {
         const resData: WeatherError = await res.json();
         throw new Error(resData.message);
