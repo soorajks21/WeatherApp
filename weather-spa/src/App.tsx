@@ -1,6 +1,6 @@
 import React from 'react';
 import Weather from './components/WeatherComponent/Weather';
-import cloudy from './components/WeatherComponent/icons/weatherlogo.png';
+import cloudy from './components/WeatherComponent/icons/perfectday.svg';
 import styled from 'styled-components';
 
 const Heading = styled.h1`
