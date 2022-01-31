@@ -3,6 +3,7 @@ import Weather from './components/WeatherComponent/Weather';
 import Logo from './components/WeatherComponent/icons/perfectday.svg';
 import styled from 'styled-components';
 import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
+import NotFound from './components/Layout/NotFound';
 
 const Heading = styled.h1`
   font-size: 28px;
@@ -24,7 +25,9 @@ function App() {
       </nav>
      
         <Routes>
-          <Route path="/" element={<Weather/>} />
+        <Route path="*" element={<NotFound/>} />
+          <Route path="/" element={<Weather />} />
+          
           </Routes>
       </Router>
 
